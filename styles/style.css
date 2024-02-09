@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+    --cor-1: #0A3871;
+    --cor-2: #FFFFFF;
+    --cor-3: #495057;
+    --cor-4: #343A40;
+    --cor-5: #F3F5FC;
+    --cor-6: #000000;
+    --cor-7: #E8E8E8;
+    --cor-8t: #9B9797;
+    --cor-9: #D8DFE8;
+    --fonte-prim: 'Inter', sans-serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: var(--fonte-prim);
+}
+
+body {
+    background-color: var(--cor-5);
+    padding: 0;
+    padding-top: 0;
+    height: 100vh;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: var(--cor-5);
+    padding: 2rem 2rem;
+    display: flex;
+    max-width: 1050px;
+}
+
+.principal {
+    display: grid;
+    grid-template-columns: 2fr 1.2fr;
+    gap: 2rem;
+    height: calc(100% - 5rem);
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+}
+
+.btn-secun {
+    color: var(--cor-1);
+    border: 1px solid var(--cor-1);
+    background-color: transparent;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    transition: .25s all;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px #0002;
+    flex: 1;
+  }
+
+  .btn-primario {
+    color: var(--cor-5);
+    background-color: var(--cor-1);
+    box-shadow: 5px 5px 15px #0005;
+    border-radius: 1.5rem;
+    border: 1px solid var(--cor-1);
+    padding: 1.5rem;
+    transition: .25s all;
+    cursor: pointer;
+    flex: 1;
+  }
+
+  .form {
+    flex: 1;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    max-width: 680px;
+    padding: 2rem 0;
+    padding-top: 80px;
+    width: 100%;
+    margin-left: auto;
+  }
+
+  .conteudo__input {
+    flex: 1;
+    color: var(--cor-1);
+    font-size: 2rem;
+    background-color: transparent;
+    resize: none;
+  }
+
+  .conteudo__input::placeholder {
+    color: var(--cor-1);
+  }
+
+  .atencao {
+    display: flex;
+    color: var(--cor-3);
+  }
+
+  .form_btn {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .resultado {
+    position: relative;
+    width: 100%;
+    max-width: 340px;
+    background-color: var(--cor-2);
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow: 5px 5px 15px #0002;
+    overflow-y: hidden;
+  }
+
+  .sem-resultado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .sem-resultado__img{
+    width: 100%;
+  }
+
+  .sem-resultado-titulo {
+    color: var(--cor-4);
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .sem-resultado-parag {
+    text-align: center;
+  }
+
+  .resultado__resultado {
+    display: none;
+  }
+
+  .resultado__texto {
+    flex: 1;
+    font-size: 1.5rem;
+    color: var(--cor-3);
+    resize: none;
+    max-height: 100%;
+    overflow-y: scroll;
+    background-color: transparent;
+    word-wrap: break-word;
+  }
+
+  

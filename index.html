@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Codificador Alura</title>
+</head>
+<body>
+
+    <header>
+        <img class="header" src="./assets/logo.png" alt="alura-logo">
+    </header>
+
+    <main class="principal">
+        <form class="form">
+            <textarea class="conteudo__input" placeholder="Digite seu texto..."></textarea>
+            <div class="atencao">
+                <img src="./assets/atent.png" alt="exclamacao">
+                <label class="atencao__texto">Apenas letras minusculas sem acento</label>
+            </div>
+            <div class="form_btn">
+                <button id="btn-encript" class="btn-primario" type="button">Criptografar</button>
+                <button id="btn-descript" class="btn-secun" type="button">Descriptografar</button>
+            </div>
+        </form>
+        <div class="resultado">
+            <div class="sem-resultado">
+                <img class="sem-resultado__img" src="./assets/personagem.png" alt="personagem">
+                <h2 class="sem-resultado-titulo">Nenhuma mensagem encontrada</h2>
+                <p class="sem-resultado-parag">Digite um texto que você deseja criptografar ou Descriptografar</p>
+            </div>
+            <div class="resultado__resultado">
+                <p class="resultado__texto" disabled></p>
+                <button id="btn-copiar" class="btn-secun">Copiar</button>
+            </div>
+        </div>
+        <div class="copiado-sucesso">
+            Texto copiado
+        </div>
+    </main>
+    <footer class="rodape">Developed by Ilson Giuliano Mota</footer>
+    
+</body>
+</html>
